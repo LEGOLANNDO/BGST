@@ -1,0 +1,116 @@
+/*
+これよりサイト全体のスタイルを記述
+*/
+
+/*フォント*/
+.noto-sans-jp-Bold {
+    font-family: "SF Pro", "Noto Sans JP", sans-serif;
+    src: url(https://www.legolanndo.site/SF-Pro.ttf) format("truetype");
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*中央寄せ文字*/
+.text_center {
+	text-align: center;
+}
+
+body {
+    background-image: url(background-image.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/*ヘッダー*/
+header {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+    
+}
+
+ul {
+    list-style:none;
+}
+
+.header__flex {
+    display: flex;
+    height:60px;
+    align-items: center;
+}
+
+.header__flex nav {
+    margin-left: auto;
+}
+
+.header__flex ul {
+    display: flex;
+}
+
+.header__flex ul li {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 22px;;
+    text-align: center;
+}
+
+
+/*リンク*/
+a {
+    text-decoration:none;
+    color: black;
+}
+
+/*
+これよりサイトのスタイルを記述 index.html
+*/
+h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.text_tate {
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	display: inline-block;
+    text-orientation: upright;
+    text-align: left;;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+/*これよりサイトのスタイルを記述 about.html*/
+.centens {
+    font-size: 20px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 0.8;
+    margin: 90px auto;
+}
+
+.centens__p {
+    text-indent: 2em;
+    margin: 20px;
+}
+
+h3 {
+    margin: 15px;
+}
+

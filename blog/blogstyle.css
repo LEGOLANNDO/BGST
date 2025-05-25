@@ -1,0 +1,388 @@
+/*
+これよりサイト全体のスタイルを記述
+*/
+
+/*フォント*/
+.noto-sans-jp-Bold {
+    font-family: "SF Pro", "Noto Sans JP", sans-serif;
+    src: url(https://www.legolanndo.dev/file/SF-Pro.ttf) format("truetype");
+    src: url(https://www.legolanndo.dev/file/NotoSansJP-Bold.ttf) format("truetype");
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/*中央寄せ文字*/
+.text_center {
+    font-family: "Noto Sans JP", sans-serif;
+	text-align: center;
+    /*text-shadow:
+        3px 3px 2px #fff,
+        -3px 3px 2px #fff,
+        -3px -3px 0 #fff,
+        3px -3px 0 #fff;*/
+}
+
+/*左寄せ文字*/
+.text_left {
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
+    /*text-shadow:
+        3px 3px 2px #fff,
+        -3px 3px 2px #fff,
+        -3px -3px 0 #fff,
+        3px -3px 0 #fff;*/
+}
+
+body {
+    font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    src: url(https://www.legolanndo.dev/file/NotoSansJP-Bold.ttf) format("truetype");
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-image: url(/img/background-image.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/*ヘッダー*/
+header {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+    
+}
+
+ul {
+    list-style:none;
+}
+
+.header__flex {
+    display: flex;
+    height:60px;
+    align-items: center;
+}
+
+.header__flex nav {
+    margin-left: auto;
+}
+
+.header__flex ul {
+    display: flex;
+}
+
+.header__flex ul li {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 22px;;
+    text-align: center;
+}
+
+.img_middle {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 0px;
+}
+
+/*リンク*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*ホバー効果*/
+.a_hover {
+    padding-bottom: 3px; /* テキストと下線の間隔 */
+    background-image: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    background-position: bottom right; /* 下線の初期位置 */
+    background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+    transition: background-size 0.3s;
+    text-decoration:none;
+    color: black;
+    position: relative;
+}
+  
+.a_hover:hover {
+    background-position: bottom left; /* 下線のホバー時位置 */
+    background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+
+/*これよりサイトのスタイルを記述 activity.html*/
+/*検索フォーム*/
+.search-form-6 {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 300px;
+}
+
+.search-form-6:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search-form-6::before {
+    width: 45px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%20%3Cpath%20d%3D%22M23.7%2020.8%2019%2016.1c-.2-.2-.5-.3-.8-.3h-.8c1.3-1.7%202-3.7%202-6C19.5%204.4%2015.1%200%209.7%200S0%204.4%200%209.7s4.4%209.7%209.7%209.7c2.3%200%204.3-.8%206-2v.8c0%20.3.1.6.3.8l4.7%204.7c.4.4%201.2.4%201.6%200l1.3-1.3c.5-.5.5-1.2.1-1.6zm-14-5.1c-3.3%200-6-2.7-6-6s2.7-6%206-6%206%202.7%206%206-2.6%206-6%206z%22%20fill%3D%22%239aa0a6%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E');
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.search-form-6 input {
+    font-size: 23px;
+    width: 250px;
+    height: 40px;
+    padding: 5px 25px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+}
+
+
+/*サイドバー用の検索フォーム*/
+.sidebar_form {
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.sidebar_form:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.sidebar_form input {
+    font-size: 23px;
+    width: 250px;
+    height: 40px;
+    padding: 5px 25px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    margin: 0px;
+}
+
+
+/*日付検索*/
+.box_right {
+    margin: 0 0 0 auto;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.search-form-date {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 300px;
+    margin: 0 0 0 auto;
+    justify-content: flex-end
+}
+
+.search-form-date:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search-form-date input {
+    font-size: 23px;
+    width: 250px;
+    height: 40px;
+    padding: 5px 25px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+}
+
+/*サイドバー用の日付検索*/
+.sidebar_form_date {
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.sidebar_form_date:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.sidebar_form_date input {
+    font-size: 23px;
+    width: 250px;
+    height: 40px;
+    padding: 5px 25px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    margin: 0px;
+}
+
+.text_back {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+/*--------------------------ブログ専用------------------------*/
+
+.title {
+    width: 95%;
+    font-size: 36px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.date {
+    width: 95%;
+    font-size: 20px;
+    color: #999;
+    margin: -10px auto;
+    text-align: left;
+}
+
+.image {
+    width: 95%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.main_text {
+    width: 95%;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    color: #333;
+}
+
+.author {
+    width: 95%;
+    font-size: 20px;
+    color: #999;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
+/*--------------------------ブログ専用------------------------*/
+
+/*ここまで*/
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+    padding: 0px;
+    transition: right 0.3s ease-in-out;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 130px;
+    z-index: 1000;
+    opacity: 0.95;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+@media only screen and (min-width:1000px) {
+    /* ブラウザサイズが1000px以上でCSSの記述が適応されます */
+
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    /* ブラウザサイズが900px以下でCSSの記述が適応されます */
+
+
+    .header__center {
+        text-align: center;
+    }
+
+    .header__flex {
+        flex-direction: center;
+        align-items: center;
+        display: flex;
+        height: 60px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-form-6 {
+        display: none;
+    }
+
+    .search-form-date {
+        display: none;
+    }
+
+
+}
